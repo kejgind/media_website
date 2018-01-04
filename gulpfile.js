@@ -115,8 +115,9 @@ gulp.task('default', ['connect', 'html', 'sass', 'js', 'watch']);
 gulp.task('docs', function(){
   return gulp.src([
     'dist/*.html',
-    'dist/assets/*/*',
-    'dist/assets/*/*/*'
+    'dist/*/*',
+    'dist/*/*/*',
+    'dist/*/*/*/*'
 ])
     .pipe(gulp.dest('docs'));
 });
