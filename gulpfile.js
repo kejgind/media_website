@@ -28,20 +28,26 @@ gulp.task('copy-js', function(){
 		'node_modules/bootstrap/dist/js/bootstrap.min.js',
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/ekko-lightbox/dist/ekko-lightbox.min.js',
-    'node_modules/popper.js/dist/popper.min.js'
+    'node_modules/popper.js/dist/popper.min.js',
+    'node_modules/slick-carousel/slick/slick.min.js'
 	])
 		.pipe(gulp.dest('dist/assets/js'))
 });
 
 gulp.task('copy-fonts', function(){
-  return gulp.src('src/fonts/*/*')
+  return gulp.src([
+    'src/fonts/*/*',
+    'node_modules/slick-carousel/slick/fonts/*'
+  ])
     .pipe(gulp.dest('dist/assets/fonts'));
 });
 
 gulp.task('copy-css', function(){
 	return gulp.src([
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
-    'node_modules/ekko-lightbox/dist/ekko-lightbox.css'
+    'node_modules/ekko-lightbox/dist/ekko-lightbox.css',
+    'node_modules/slick-carousel/slick/slick-theme.css',
+    'node_modules/slick-carousel/slick/slick.css'
   ])
 		.pipe(gulp.dest('dist/assets/css'))
 });
