@@ -83,7 +83,7 @@ gulp.task('js', function(){
 });
 
 gulp.task('sass', function(){
-  return gulp.src(['src/scss/main.scss', 'src/scss/partials/*.scss'])
+  return gulp.src('src/scss/main.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     // .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer({
@@ -100,7 +100,7 @@ gulp.task('sass', function(){
 */
 gulp.task('watch', function () {
   gulp.watch('src/*.html', ['html']);
-  gulp.watch(['src/scss/main.scss', 'src/scss/partials/*.scss'], ['sass']);
+  gulp.watch('src/scss/main.scss', ['sass']);
   gulp.watch('src/js/*.js', ['js']);
 });
 
