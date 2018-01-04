@@ -13,7 +13,7 @@ const autoprefixer = require('gulp-autoprefixer');
 */
 gulp.task('connect', function() {
   connect.server({
-    name: 'madia bs4 server',
+    name: 'media bs4 server',
     root: 'dist',
     port: 3000,
     livereload: true
@@ -25,8 +25,10 @@ gulp.task('connect', function() {
 */
 gulp.task('copy-js', function(){
 	return gulp.src([
-		'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-		'node_modules/jquery/dist/jquery.min.js'
+		'node_modules/bootstrap/dist/js/bootstrap.min.js',
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/ekko-lightbox/dist/ekko-lightbox.min.js',
+    'node_modules/popper.js/dist/popper.min.js'
 	])
 		.pipe(gulp.dest('dist/assets/js'))
 });
@@ -37,7 +39,10 @@ gulp.task('copy-fonts', function(){
 });
 
 gulp.task('copy-css', function(){
-	return gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.css')
+	return gulp.src([
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/ekko-lightbox/dist/ekko-lightbox.css'
+  ])
 		.pipe(gulp.dest('dist/assets/css'))
 });
 
@@ -50,7 +55,7 @@ gulp.task('imagemin', function(){
   return gulp.src('src/img/*')
     .pipe(imagemin([
       imagemin.jpegtran({progressive: true}),
-      imagemin.optipng({optimizationLevel: 7})
+      imagemin.optipng({optimizationLevel: 3})
       ]))
     .pipe(gulp.dest('dist/assets/img'));
 });
