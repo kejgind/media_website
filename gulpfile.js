@@ -108,3 +108,15 @@ gulp.task('watch', function () {
   5 - Run server with watch and live reload of project files
 */
 gulp.task('default', ['connect', 'html', 'sass', 'js', 'watch']);
+
+/*
+  6. Copy dist folder to docs folder for github pages
+*/
+gulp.task('docs', function(){
+  return gulp.src([
+    'dist/*.html',
+    'dist/assets/*/*',
+    'dist/assets/*/*/*'
+])
+    .pipe(gulp.dest('docs'));
+});
