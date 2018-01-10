@@ -11,11 +11,13 @@
 
 ?>
 
+<?php wp_footer();?>
+
 	<footer id="main-footer" class="text-center p-4">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<p>Copyright 2017 &copy; MEDIA</p>
+					<p>&copy; <?php echo date('Y'); ?> <?php the_author_link(); ?></p>
 				</div>
 			</div>
 		</div>
@@ -36,11 +38,11 @@
 		</div>
 	</div>
 
-	<script src="wp-content/themes/media2wp/assets/js/jquery.min.js"></script>
-	<script src="wp-content/themes/media2wp/assets/js/popper.min.js"></script>
-	<script src="wp-content/themes/media2wp/assets/js/bootstrap.min.js"></script>
-	<script src="wp-content/themes/media2wp/assets/js/ekko-lightbox.min.js"></script>
-	<script src="wp-content/themes/media2wp/assets/js/scripts.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/jquery.min.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/popper.min.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/bootstrap.min.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/ekko-lightbox.min.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/scripts.js"></script>
 
 	</body>
 
