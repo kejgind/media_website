@@ -104,7 +104,7 @@ gulp.task('watch', _ => {
   gulp.watch('src/scss/main.scss', ['sass']);
   gulp.watch([
     'dist/assets/css/*.css',
-    'styles.css'
+    'wp-build/style.css'
   ], ['styles']);
   gulp.watch('src/js/*.js', ['js']);
   gulp.watch([

@@ -9,39 +9,13 @@ get_header(); ?>
 
 	<?php get_template_part( 'template-parts/content', 'homeicon' ); ?>
 
+	<?php get_template_part( 'template-parts/content', 'homehead' ); ?>
+
+	<?php get_template_part( 'template-parts/content', 'infosection' ); ?>
 
 
-	<!-- HOME HEADING SECTION -->
-	<section id="home-heading" class="p-5">
-		<div class="dark-overlay">
-			<div class="container pt-5">
-				<div class="row">
-					<div class="col">
-						<h1>Are You Ready to Get Started</h1>
-						<p class="d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dolorem nesciunt vel dolorum aperiam. Amet reprehenderit
-							eos unde nihil libero.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<!-- INFO SECTION -->
-	<section id="info" class="py-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 align-self-center">
-					<h3>Lorem ipsum</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla ducimus maiores voluptate consequuntur eius.
-					</p>
-					<a href="#" class="btn btn-outline-danger btn-large">Learn More</a>
-				</div>
-				<div class="col-md-6">
-					<img src="assets/img/laptop.png" class="img-fluid" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
+
 
 	<!-- VIDEO PLAY SECTION -->
 	<section id="video-play">

@@ -33,7 +33,7 @@
 				<!-- NAVIGATION -->
 				<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 					<div class="container">
-						<a href="/" class="navbar-brand">MEDIA</a>
+						<a href="/" class="navbar-brand">MEDIA <small>2</small> WORDPRESS</a>
 						<button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar">
 							<span class="navbar-toggler-icon"></span>
 						</button>
@@ -43,7 +43,7 @@
 								'theme_location'	=> 'menu-1',
 								'container'				=> 'div',
 								'container_class' => 'collapse navbar-collapse',
-								'container_id' 		=> 'navbarNav',
+								'container_id' 		=> 'navNavbar',
 								'menu_class' 			=> 'navbar-nav ml-auto',
 							) );
 						?>
