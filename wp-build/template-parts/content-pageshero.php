@@ -24,7 +24,7 @@ $page_subtitle	= get_field( 'page_subtitle' );
 		<div class="row">
 			<div class="col-md-6 m-auto text-center">
 				<h1><?php the_title(); ?></h1>
-				<p>Mamo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, veniam?</p>
 			</div>
 		</div>
 	</div>
