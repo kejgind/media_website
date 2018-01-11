@@ -13,25 +13,12 @@ get_header(); ?>
 
 	<?php get_template_part( 'template-parts/content', 'infosection' ); ?>
 
+	<?php get_template_part( 'template-parts/content', 'videoplay' ); ?>
 
 
 
 
-	<!-- VIDEO PLAY SECTION -->
-	<section id="video-play">
-		<div class="dark-overlay">
-			<div class="container p-5">
-				<div class="row">
-					<div class="col">
-						<a href="#" class="video" data-video="https://www.youtube.com/embed/UMwunYQGvhs" data-toggle="modal" data-target="#videoModal">
-							<i class="fas fa-play fa-4x"></i>
-						</a>
-						<h1>See What We Do</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+
 
 	<!-- PHOTO GALLERY -->
 	<section id="gallery" class="py-5">
