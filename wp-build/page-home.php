@@ -15,52 +15,11 @@ get_header(); ?>
 
 	<?php get_template_part( 'template-parts/content', 'videoplay' ); ?>
 
+	<?php get_template_part( 'template-parts/content', 'gallery' ); ?>
 
 
 
 
-
-	<!-- PHOTO GALLERY -->
-	<section id="gallery" class="py-5">
-		<div class="container">
-			<h1 class="text-center">Photo Gallery</h1>
-			<p class="text-center">Check out our photos</p>
-			<div class="row text-center mb-4">
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/1" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/1" class="img-fluid" alt="">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/2" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/2" class="img-fluid" alt="">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/3" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/3" class="img-fluid" alt="">
-					</a>
-				</div>
-			</div>
-			<div class="row text-center mb-4">
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/4" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/4" class="img-fluid" alt="">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/5" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/5" class="img-fluid" alt="">
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="http://lorempixel.com/560/560/business/6" data-toggle="lightbox" data-gallery="img-gallery" data-type="image">
-						<img src="http://lorempixel.com/400/400/business/6" class="img-fluid" alt="">
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- NEWSLETTER SECTION -->
 	<section id="newsletter" class="text-center p-5 bg-dark text-white">
