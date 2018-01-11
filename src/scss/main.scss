@@ -42,7 +42,7 @@ $dark-overlay: rgba(0,0,0,0.7);
 #home-heading {
   position: relative;
   min-height: 200px;
-  background: url('../img/lights.jpg');
+  background: url('/themes/media2wp/assets/img/lights.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   text-align: center;
@@ -52,7 +52,7 @@ $dark-overlay: rgba(0,0,0,0.7);
 #video-play {
   position: relative;
   min-height: 200px;
-  background: url('../img/media.jpg');
+  background: url('/themes/media2wp/assets/img/media.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: 0 -300px;
@@ -80,7 +80,7 @@ footer#main-footer {
 
 #page-header {
   height: 200px;
-  background: url('../img/image1.jpg');
+  background-image: url('/themes/media2wp/assets/img/image1.jpg');
   background-position: 0 -360px;
   background-attachment: fixed;
   color: #fff;
@@ -95,6 +95,9 @@ footer#main-footer {
 }
 
 #faq {
+  h1 {
+   color: red;
+  }
   .card {
     border: #444;
 

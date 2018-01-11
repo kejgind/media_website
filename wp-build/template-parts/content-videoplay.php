@@ -1,12 +1,13 @@
 <?php
 $video_title		= get_field( 'video_title' );
 $video_link			= get_field( 'video_link' );
+$video_bg_img			= get_field( 'video_bg_img' );
 
 ?>
 
 
 <!-- VIDEO PLAY SECTION -->
-<section id="video-play">
+<section id="video-play" style="background-image:url('<?php echo $video_bg_img; ?>')">
 	<div class="dark-overlay">
 		<div class="container p-5">
 			<div class="row">
