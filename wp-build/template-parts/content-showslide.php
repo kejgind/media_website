@@ -1,19 +1,20 @@
 <?php
 // Custom Fields
-$hps_1_image				= get_post_meta( 16, 'hps_1_image', true );
-$hps_1_header				= get_post_meta( 16, 'hps_1_header', true );
-$hps_1_subtitle			= get_post_meta( 16, 'hps_1_subtitle', true );
-$hps_1_btn					= get_post_meta( 16, 'hps_1_btn', true );
+$hps_1_image				= get_field( 'hps_1_image' );
+$hps_1_header				= get_field( 'hps_1_header' );
+$hps_1_subtitle			= get_field( 'hps_1_subtitle' );
+$hps_1_btn					= get_field( 'hps_1_btn' );
 
-$hps_2_image				= get_post_meta( 16, 'hps_2_image', true );
-$hps_2_header				= get_post_meta( 16, 'hps_2_header', true );
-$hps_2_subtitle			= get_post_meta( 16, 'hps_2_subtitle', true );
-$hps_2_btn					= get_post_meta( 16, 'hps_2_btn', true );
+$hps_2_image				= get_field( 'hps_2_image' );
+$hps_2_header				= get_field( 'hps_2_header' );
+$hps_2_subtitle			= get_field( 'hps_2_subtitle' );
+$hps_2_btn					= get_field( 'hps_2_btn' );
 
-$hps_3_image				= get_post_meta( 16, 'hps_3_image', true );
-$hps_3_header				= get_post_meta( 16, 'hps_3_header', true );
-$hps_3_subtitle			= get_post_meta( 16, 'hps_3_subtitle', true );
-$hps_3_btn					= get_post_meta( 16, 'hps_3_btn', true );
+$hps_3_image				= get_field( 'hps_3_image' );
+$hps_3_header				= get_field( 'hps_3_header' );
+$hps_3_subtitle			= get_field( 'hps_3_subtitle' );
+$hps_3_btn					= get_field( 'hps_3_btn' );
+
 ?>
 
 <!-- SHOWCASE SLIDER -->
@@ -26,7 +27,7 @@ $hps_3_btn					= get_post_meta( 16, 'hps_3_btn', true );
 		</ol>
 		<div class="carousel-inner">
 
-			<div class="carousel-item carousel-image-1 active">
+			<div class="carousel-item carousel-image-1 active" style="background-image:url('<?php echo $hps_1_image; ?>')">
 				<div class="container">
 					<div class="carousel-caption d-none d-sm-block text-right mb-5">
 						<h1 class="display-3"><?php echo $hps_1_header; ?></h1>
@@ -35,7 +36,7 @@ $hps_3_btn					= get_post_meta( 16, 'hps_3_btn', true );
 					</div>
 				</div>
 			</div>
-			<div class="carousel-item carousel-image-2">
+			<div class="carousel-item carousel-image-2" style="background-image:url('<?php echo $hps_2_image; ?>')">
 				<div class="container">
 					<div class="carousel-caption d-none d-sm-block text-right mb-5">
 						<h1 class="display-3"><?php echo $hps_2_header; ?></h1>
@@ -44,7 +45,7 @@ $hps_3_btn					= get_post_meta( 16, 'hps_3_btn', true );
 					</div>
 				</div>
 			</div>
-			<div class="carousel-item carousel-image-3">
+			<div class="carousel-item carousel-image-3" style="background-image:url('<?php echo $hps_3_image; ?>')">
 				<div class="container">
 					<div class="carousel-caption d-none d-sm-block text-right mb-5">
 						<h1 class="display-3"><?php echo $hps_3_header; ?></h1>
