@@ -17,12 +17,14 @@
 					<h4 class="card-title">$<?php the_field('service_plan_price'); ?>/Month</h4>
 					<p class="card-text"><?php the_field('service_plan_description'); ?></p>
 
+					<?php $features = get_field('service_plan_feature');
+					if($features) :?>
 					<ul class="list-group">
-
-						<li class="list-group-item"><i class="fas fa-check"></i><?php $plan_features = the_field('service_plan_feature'); ?></li>
-
+						<?php foreach ($features as $feature) : ?>
+						<li class="list-group-item"><i class="fas fa-check"></i>&ensp;<?php echo $feature; ?></li>
+						<?php endforeach; ?>
 					</ul>
-
+					<?php endif; ?>
 					<a href="#" class="btn btn-danger btn-block mt-2"><?php the_field('service_plan_button'); ?></a>
 				</div>
 				<div class="card-footer text-muted">
