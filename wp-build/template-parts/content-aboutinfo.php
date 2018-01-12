@@ -17,7 +17,11 @@ $about_img		=	get_field( 'about_image' );
 				<?php echo $about_body; ?>
 			</div>
 			<div class="col-md-6">
-				<img src="<?php echo $about_img['url']; ?>" alt="<?php echo $about_img['alt']; ?>" class="about-img img-fluid rounded-circle d-none d-md-block">
+				<img
+					src="<?php echo $about_img['url']; ?>"
+					alt="<?php echo $about_img['alt']; ?>"
+					class="about-img img-fluid rounded-circle d-none d-md-block"
+				>
 			</div>
 		</div>
 	</div>

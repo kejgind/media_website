@@ -5,15 +5,26 @@ $dark-overlay: rgba(0,0,0,0.7);
 // }
 
 .navbar {
-  .nav-link {
+  .nav-link,
+  a {
     font-size: 14px;
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
     text-transform: uppercase;
     padding-left: 1em !important;
     padding-right: 1em !important;
   }
 
-  .nav-item.active {
-    border-left: #444 3px solid;
+  .nav-link:hover,
+  a:hover {
+    color: #dc3545;
+  }
+
+  .nav-item.active,
+  li.current-menu-item a,
+  li.current-page-item a {
+    border-left: #dc3545 3px solid;
+    color: #fff;
   }
 }
 
@@ -76,6 +87,10 @@ $dark-overlay: rgba(0,0,0,0.7);
 footer#main-footer {
   background: #000;
   color: #fff;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 #page-header {
@@ -95,9 +110,6 @@ footer#main-footer {
 }
 
 #faq {
-  h1 {
-   color: red;
-  }
   .card {
     border: #444;
 
