@@ -16,7 +16,7 @@ $gallery_subtitle	= get_field( 'gallery_subtitle' );
 			<?php $loop = new WP_Query( array( 'post_type' => 'image_gallery', 'orderby' => 'post_id', 'order' => 'ASC' ) ); ?>
 			<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-			<div class="col-md-4 mb-4">
+			<div class="col-md-6 col-lg-4 mb-4">
 
 				<?php
 					$image	= get_field('gallery_image');

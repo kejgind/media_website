@@ -31,7 +31,7 @@
 			<header id="masthead" class="site-header">
 
 				<!-- NAVIGATION -->
-				<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+				<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 					<div class="container">
 						<a href="/" class="navbar-brand">MEDIA <small>2</small> WORDPRESS</a>
 						<button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar">
@@ -55,6 +55,5 @@
 
 				<!-- #site-navigation -->
 			</header>
-			<!-- #masthead -->
 
 			<div id="content" class="site-content">

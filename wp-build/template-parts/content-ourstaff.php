@@ -12,7 +12,7 @@
 				$photo	= get_field('person_photo');
 			?>
 
-			<div class="col-md-3">
+			<div class="col-sm-6 col-lg-3 mb-3">
 				<img src="<?php echo $photo['url']; ?>" class="img-fluid rounded-circle mb-2" alt="<?php echo $photo['alt']; ?>">
 				<h4><?php the_field( 'person_name' ); ?></h4>
 				<small><?php the_field( 'person_position' ); ?></small>

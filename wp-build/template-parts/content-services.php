@@ -7,7 +7,7 @@
 
 		<?php while( $loop->have_posts() ) : $loop->the_post(); ?>
 
-		<div class="col-md-4">
+		<div class="col-md-4 mb-3">
 			<div class="card text-center">
 				<div class="card-header">
 					<h3><?php the_field('service_plan_name'); ?></h3>

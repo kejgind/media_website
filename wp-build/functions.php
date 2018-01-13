@@ -107,8 +107,6 @@ add_action( 'after_setup_theme', 'media2wp_content_width', 0 );
  */
 function media2wp_scripts() {
 	wp_enqueue_style( 'media2wp-style', get_stylesheet_uri() );
-
-	}
 }
 add_action( 'wp_enqueue_scripts', 'media2wp_scripts' );
 
