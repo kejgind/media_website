@@ -42,6 +42,7 @@
 	<script src="/wp-content/themes/media2wp/assets/js/popper.min.js"></script>
 	<script src="/wp-content/themes/media2wp/assets/js/bootstrap.min.js"></script>
 	<script src="/wp-content/themes/media2wp/assets/js/ekko-lightbox.min.js"></script>
+	<script src="/wp-content/themes/media2wp/assets/js/slick.min.js"></script>
 	<script src="/wp-content/themes/media2wp/assets/js/scripts.js"></script>
 
 	</body>

@@ -9,52 +9,29 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<section class="hero bg-warning py-5" id="page-404">
+	<div class="container text-center">
+		<h1>Bummer! That page can't be found.</h1>
+	</div>
+</section>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'media2wp' ); ?></h1>
-				</header><!-- .page-header -->
+<section class="py-5 bg-light">
+	<div class="container text-center">
+		<h3 class="">If You got here, You probably took a wrong turn somewhere. Let's get You back on track.</h3>
+	</div>
+</section>
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'media2wp' ); ?></p>
+<section class="py-5">
+	<div class="container text-center">
+		<div class="row justify-content-center">
+			<div class="col-sm-8">
+					<h2 class="">Now look at that...</h2>
+					<h2 class="">...or better yet, head back to <a href="<?php echo esc_url( home_url( '/') ); ?>">home page</a>.</h2>
+			</div>
+		</div>
+	</div>
+</section>
 
-					<?php
-						get_search_form();
-
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'media2wp' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'media2wp' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 
 <?php
 get_footer();
